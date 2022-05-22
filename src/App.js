@@ -1,23 +1,82 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header'>
+        <ul>
+          <li>
+          <div>MEDIA APP</div>
+          </li>
+          <li>
+        <input />
+          </li>
+          <li>
+          <div>john mayer</div>
+          </li>
+        </ul>
+      </div>
+      <div className='body'>
+        <div className='sidebar'>
+          <ul>
+            <li>New Release</li>
+            <li>Trending</li>
+            <li>Coming Soon</li>
+            <li>Favorites</li>
+            <li>Watch Later</li>
+          </ul>
+        </div>
+        <div className='main'>
+         <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+         <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+        {/*   <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div>
+          <div>
+            <img alt='' src='https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg'/>
+            <p>title and description</p>
+          </div> */}
+        </div>
+      </div>
     </div>
   );
 }
