@@ -1,8 +1,7 @@
-.parent{
-
-    img{
+.card {
+    img {
         margin: 10px;
     }
     display: flex;
-    flex-flow:row wrap;
+    flex-direction: column;
 }

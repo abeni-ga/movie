@@ -1,0 +1,10 @@
+[
+    {
+        "label": "New Release",
+        "path": "/new/release/path"
+    },
+    {
+        "label": "Trending",
+        "path": "/trending/path"
+    }
+]
