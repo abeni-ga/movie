@@ -1,10 +1,27 @@
 [
     {
         "label": "New Release",
-        "path": "/new/release/path"
+        "path": "/new/release/path",
+        "id": 1
     },
     {
         "label": "Trending",
-        "path": "/trending/path"
+        "path": "/trending/path",
+        "id": 2
+    },
+    {
+        "label": "Coming Soon",
+        "path": "/coming/soon/path",
+        "id": 3
+    },
+    {
+        "label": "Favorites",
+        "path": "/favorites/path",
+        "id": 4
+    },
+    {
+        "label": "Watch Later",
+        "path": "/watch/later/path",
+        "id": 5
     }
 ]

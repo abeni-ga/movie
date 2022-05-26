@@ -4,43 +4,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-.header {
-    position: sticky; //use this when you want something not to scroll above the specified top and stick at that point
-    top: 0; //for example here i put 0 so the header will not scroll past that point
-    width: 100vw;
-    background-color: #d41e1e;
-    input {
-        opacity: 50%;
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    li {
-        text-decoration: none;
-        box-sizing: border-box;
-        list-style: none;
-    }
-}
 
-.body {
-    display: flex;
-    // flex-flow: column wrap;
-    width: 100vw;
-    min-height: 95vh;
-}
 .sidebar {
     width: 20%;
     min-height: 98vh;
     background-color: #2e2e2d;
     color: aliceblue;
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-    }
 }
 
 .main {

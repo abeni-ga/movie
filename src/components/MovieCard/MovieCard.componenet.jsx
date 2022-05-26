@@ -1,16 +1,16 @@
 import "./MovieCard.styles.scss";
 
-const MovieCard = () => {
+const MovieCard = (props) => {
     return (
         //Change class name
         //accept Name and Genre as a prop
         <div className="card"> 
             <img
-                alt=""
-                src="https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+                alt={`${props.movieTitle}`}
+                src={props.imgUrl}
             />
-            <h3>The In Between</h3>
-            <p>Genre</p>
+            <h3>{props.movieTitle}</h3>
+            <p>{props.movieGenre}</p>
         </div>
     );
 };

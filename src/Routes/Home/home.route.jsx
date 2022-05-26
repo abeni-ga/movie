@@ -1,30 +1,67 @@
 import React from "react";
 import MovieCard from "../../components/MovieCard/MovieCard.componenet";
+import Header from "../../components/header/Header.component";
+import SideMenus from "../../components/SideMenus/SideMenus.components";
+import sidebarContent from './sidebar.json';
+
 import "./home.styles.scss";
 
 const Home = () => {
+
+    const movies = [
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+        {
+            movieTitle:"The In Between",
+            movieGenre:'Romance',
+            imgUrl:"https://upload.wikimedia.org/wikipedia/en/3/31/The_In_Between_poster.jpeg"
+        },
+    ]
     return (
         <div className="parent">
             {/* make header component */}
-            <div className="header">
-                <ul>
-                    <li>
-                        <div>MEDIA APP</div>
-                    </li>
-                    {/* then make input component and it should have its own style */}
-                    <li>
-                        <input />
-                    </li>
-                    {/* accept the name as a prop after you create the header */}
-                    <li>
-                        <div>john mayer</div>
-                    </li>
-                </ul>
-            </div>
+           <Header/>
             <div className="body">
                 {/* sidebar should be a component   */}
                 <div className="sidebar">
-                    <ul>
                         {/* make the list a component--- like a button  */}
                         {/**
                          * map the ListButtonComponent with json file i'll create the json file example just continue with that
@@ -36,22 +73,11 @@ const Home = () => {
                         {/*
                           <li><ListButtonComponent label={"the name will be here"} path={"the link or route it points to"}/></li>
                         */}
-                        <li>New Release</li>
-                        <li>Trending</li>
-                        <li>Coming Soon</li>
-                        <li>Favorites</li>
-                        <li>Watch Later</li>
-                    </ul>
+                        <SideMenus sidebarContents={sidebarContent}/>
                 </div>
                 <div className="main">
                     {/* same here map */}
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map((movie)=><MovieCard movieTitle={movie.movieTitle} movieGenre={movie.movieGenre} imgUrl={movie.imgUrl}/>)}
                 </div>
             </div>
         </div>
