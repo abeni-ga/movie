@@ -1,9 +1,11 @@
 import './Input.styles.scss';
 
-const Input = (props)=>{
+const Input = ({label,...otherProps})=>{
   return(
+
     <div className="input-container">
-    <input type={props.type} placeholder={props.placeholder}/>
+      {label && <label>{label}</label>}
+    <input type={otherProps.type} placeholder={otherProps.placeholder}/>
   </div>
   )
 }
