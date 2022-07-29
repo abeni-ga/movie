@@ -5,7 +5,7 @@ const Input = ({label,...otherProps})=>{
 
     <div className="input-container">
       {label && <label>{label}</label>}
-    <input type={otherProps.type} placeholder={otherProps.placeholder}/>
+    <input {...otherProps}/>
   </div>
   )
 }
